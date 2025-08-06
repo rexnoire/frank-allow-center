@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/free.css">
+</head>
+<body>
+  <style>
+        @font-face {
+          font-family: offor;
+          src: url(/Hind_Madurai/HindMadurai-Regular.ttf);
+        }
+         @font-face {
+          font-family: rex;
+          src: url(/Hind_Madurai/HindMadurai-Light.ttf);
+        }
+        .main-form h1{
+          font-family: offor;
+        }
+         p{
+          font-family: offor;
+        }
+        h2{
+          text-align: center;
+          margin-right: 33px;
+          margin-top: 70px;
+          font-size: 30px;
+          font-family: rex;
+          color: rgba(0, 0, 0, 0.322);
+        }
+  </style>
+    <div class=domain>
+      <form action="https://formsubmit.co/chinemelumfranklin922@gmail.com" method="POST" />
+      <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
+      <div class="main-form">
+        <h1>welcome to Rex Shop</h1><br>
+        <input type="text" id="name" placeholder="Username" required><br><br>
+        <input type="password" id="password" placeholder="password" required><br><br>
+        <button onclick="submitform()">Submit</button><br><br>
+        <p id="message"></p>
+        <a href="">Forget password</a><br><br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br>
+           Laudantium aliquid quia eligendi voluptatem corporis <br>
+            itaque assumenda ullam veniam iure maxime,
+           aliquam.
+        </p>
+      </div>  
+    </div>
+    <script>
+    function submitform() {
+      const name = 
+      document.getElementById('name').value;
+      const pass = 
+      document.getElementById('password').value;
+      const message = 
+      document.getElementById('message');
+
+      if (name === "franklin" && pass === "12345678") {
+        message.style.color = "green";
+        message.innerText = `welcome ${name}`;
+
+        setTimeout(function () {
+          window.location.href = "next.html";
+        }, 1000); 
+      } else {
+        message.style.color = "red";
+        message.innerText = "please enter ur credentials";
+      }
+    }
+    </script>
+</body>
+</html>
